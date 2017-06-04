@@ -16,7 +16,7 @@ import android.widget.ImageView;
 
 import com.quickblox.sample.chat.R;
 
-public class MaskedImageView extends ImageView {
+public class MaskedImageView extends android.support.v7.widget.AppCompatImageView {
 
     private Paint maskedPaint;
     private Paint copyPaint;

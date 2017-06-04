@@ -28,7 +28,7 @@ public class SplashActivity extends CoreSplashActivity {
         if (!checkSignIn()) {
 
             QBUser qbUser = CoreConfigUtils.getUserFromConfig(Consts.SAMPLE_CONFIG_FILE_NAME);
-
+            System.out.println("qbUser :"+qbUser);
             QBUsers.signIn(qbUser).performAsync(new QBEntityCallback<QBUser>() {
                 @Override
                 public void onSuccess(QBUser qbUser, Bundle bundle) {
@@ -45,7 +45,7 @@ public class SplashActivity extends CoreSplashActivity {
         }
     }
 
-    private boolean checkSignIn() {
+    protected boolean checkSignIn() {
         return QBSessionManager.getInstance().getSessionParameters() != null;
     }
 

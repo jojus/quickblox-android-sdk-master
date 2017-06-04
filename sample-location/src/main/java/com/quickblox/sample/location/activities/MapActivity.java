@@ -14,7 +14,6 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.widget.EditText;
-
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -42,7 +41,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MapActivity extends CoreBaseActivity implements LocationListener, OnMapReadyCallback {
+ public class MapActivity extends CoreBaseActivity implements LocationListener, OnMapReadyCallback {
 
     private GoogleMap googleMap;
     private Location lastLocation;
@@ -68,7 +67,7 @@ public class MapActivity extends CoreBaseActivity implements LocationListener, O
     private void initGooglePlayStatus() {
         // Getting Google Play availability status
         int status = GooglePlayServicesUtil.isGooglePlayServicesAvailable(getBaseContext());
-
+        System.out.println("status :"+status);
         // Showing status
         if (status != ConnectionResult.SUCCESS) {
             // Google Play Services are not available
