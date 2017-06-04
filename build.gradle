@@ -26,8 +26,8 @@ ext {
     minSdkVersion = 14
     targetSdkVersion = 25
 
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_1_8 // changed
+    targetCompatibility = JavaVersion.VERSION_1_8 // changed
 
     lintAbortOnError = false
 
@@ -41,11 +41,11 @@ ext {
 
     // Dependency versions
     playServicesVersion = '10.2.1'
-    supportV4Version = '25.2.0'
-    appcompatV7Version = '25.2.0'
-    recyclerviewV7Version = '25.2.0'
-    supportAnnotationsVersion = '25.2.0'
-    designVersion = '25.2.0'
+    supportV4Version = '25.2.0'         // changed
+    appcompatV7Version = '25.2.0'       // changed
+    recyclerviewV7Version = '25.2.0'    // changed
+    supportAnnotationsVersion = '25.2.0' // changed
+    designVersion = '25.2.0'  // changed
 
     uilVersion = '1.9.0'
     glideVersion = '3.6.1'
